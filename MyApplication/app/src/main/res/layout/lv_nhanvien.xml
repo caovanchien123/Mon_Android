@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:padding="5dp"
+        android:src="@drawable/img_user"
+        android:layout_weight="1"
+        android:id="@+id/img_nv_user"
+        android:layout_width="60dp"
+        android:layout_height="60dp"/>
+    <LinearLayout
+        android:paddingLeft="20dp"
+        android:layout_weight="30"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:id="@+id/tv_nv_ten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ten: Ten cua ai"/>
+        <TextView
+            android:id="@+id/tv_nv_sdt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SDT: O122121212"/>
+        <TextView
+            android:id="@+id/tv_nv_matkhau"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mật khẩu: O122121212"/>
+    </LinearLayout>
+</LinearLayout>

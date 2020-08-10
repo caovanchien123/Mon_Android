@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:background="#CEFFFFFF"
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="#F64545"
+            android:background="#459CF8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hoá đơn"/>
+        <TextView
+            android:id="@+id/tenNV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên nhân viên: "/>
+        <TextView
+            android:id="@+id/ngayLap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ngày lập: "/>
+        <TextView
+            android:id="@+id/maHoaDon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mã HD: "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Danh sách sản phẩm:"/>
+        <ListView
+            android:id="@+id/lvDS"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Danh sách sản phẩm đã chọn:"/>
+        <ListView
+            android:id="@+id/lvDaChon"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tông tiền: "
+            android:id="@+id/edt_TongTien"
+            />
+        <Button
+            android:background="@drawable/custom_button"
+            android:id="@+id/btnLuu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tạo hoá đơn"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:background="#CEFFFFFF"
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/img_edit_nv"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/img_user"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"/>
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:layout_below="@+id/img_edit_nv"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_edit_masp"
+                android:textSize="20dp"
+                android:text="Mã SP:"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <EditText
+                android:maxLines="1"
+                android:maxLength="30"
+                android:id="@+id/edt_edit_tensp"
+                android:hint="Nhập tên SP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:maxLines="1"
+                android:maxLength="30"
+                android:id="@+id/edt_edit_giasp"
+                android:hint="Nhập giá"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Đơn vị tính:"/>
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sp_donvitinh"/>
+            </LinearLayout>
+            <Button
+                android:background="@drawable/custom_button"
+                android:layout_gravity="center"
+                android:layout_margin="30dp"
+                android:text="Lưu"
+                android:id="@+id/btn_edit_them"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
