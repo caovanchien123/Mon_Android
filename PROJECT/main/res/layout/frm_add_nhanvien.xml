@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:background="#CEFFFFFF"
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/img_add_nv"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/img_user"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"/>
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:layout_below="@+id/img_add_nv"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <EditText
+                android:maxLines="1"
+                android:maxLength="30"
+                android:id="@+id/edt_add_honv"
+                android:hint="Nhập họ nhân viên"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:maxLines="1"
+                android:maxLength="30"
+                android:id="@+id/edt_add_tennv"
+                android:hint="Nhập tên nhân viên"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:maxLines="1"
+                android:maxLength="30"
+                android:id="@+id/edt_add_matkhau"
+                android:hint="Nhập mật khẩu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:maxLines="1"
+                android:maxLength="30"
+                android:id="@+id/edt_add_sdt"
+                android:hint="Nhập SDT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RadioGroup
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Giớ tính:"/>
+                <RadioButton
+                    android:checked="true"
+                    android:layout_weight="1"
+                    android:id="@+id/r_add_nam"
+                    android:text="Nam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <RadioButton
+                    android:background="@drawable/custom_button"
+                    android:layout_weight="1"
+                    android:id="@+id/r_add_nu"
+                    android:text="Nữ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RadioGroup>
+            <Button
+                android:layout_gravity="center"
+                android:layout_margin="30dp"
+                android:text="Lưu"
+                android:id="@+id/btn_add_them"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
